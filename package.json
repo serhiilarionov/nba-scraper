@@ -1,0 +1,42 @@
+{
+  "name": "sportsscraper",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "bluebird": "^2.9.14",
+    "body-parser": "~1.10.0",
+    "cheerio": "^0.19.0",
+    "compression": "~1.2.2",
+    "cookie-parser": "~1.3.3",
+    "ejs": "~1.0.0",
+    "express": "~4.10.6",
+    "forever-monitor": "^1.7.0",
+    "glob": "~4.3.1",
+    "lodash": "^2.4.1",
+    "method-override": "~2.3.0",
+    "moment": "^2.10.6",
+    "moment-timezone": "^0.5.1",
+    "morgan": "~1.5.0",
+    "mysql": "~2.5.3",
+    "nodemailer": "^1.5.0",
+    "pg": "^4.4.1",
+    "pg-hstore": "^2.3.2",
+    "request": "^2.53.0",
+    "request-promise": "^1.0.2",
+    "sequelize": "^3.21.0",
+    "serve-favicon": "~2.1.7"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-develop": "~0.4.0",
+    "grunt-contrib-less": "~0.12.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "request": "~2.51.0",
+    "time-grunt": "~1.0.0",
+    "load-grunt-tasks": "~1.0.0"
+  }
+}

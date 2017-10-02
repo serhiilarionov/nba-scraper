@@ -1,0 +1,145 @@
+<% include header %>
+
+<h1><%-title %></h1>
+<hr>
+<div>
+  <ul>
+    <li id="NBA">
+      <strong>NBA</strong>
+      <ul>
+        <li>
+          <p>Scores:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nba&type=scoreboard&date=20160322">Example by Date</a>
+            <small>(scrap?sport=%SPORT%&type=scoreboard&date=%DATE%)</small>
+          </p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nba&type=scoreboard&begin=20160301&end=20160320">Example by Date Range </a>
+            <small>(scrap?sport=%SPORT%&type=scoreboard&begin=%BEGIN%&end=%END%)</small>
+          </p>
+        </li>
+        <li>
+          <p>Odds:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nba&type=odds">Example</a>
+            <small>(scrap?sport=%SPORT%&type=%TYPE%)</small>
+          </p>
+        </li>
+        <li>
+          <p>Futures odds:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nba&type=futuresOdds">Example</a>
+            <small>(scrap?sport=%SPORT%&type=%TYPE%)</small>
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li id="NFL">
+      <strong>NFL</strong>
+      <ul>
+        <li>
+          <p>Scores:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nfl&type=scoreboard&seasonYear=2014">Example by Year</a>
+            <small>(scrap?sport=%SPORT%&type=scoreboard&seasonYear=%YEAR%)</small>
+          </p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nfl&type=scoreboard&seasonYear=2014&seasonType=2">Example by Year & seasonType</a>
+            <small>(scrap?sport=%SPORT%&type=scoreboard&seasonYear=%YEAR%&seasonType=%SEASON%)</small>
+          </p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nfl&type=scoreboard&seasonYear=2014&seasonType=2&weekNumber=2">Example by Year & seasonType & weekNumber</a>
+            <small>(scrap?sport=%SPORT%&type=scoreboard&seasonYear=%YEAR%&seasonType=%SEASON%&weekNumber=%WEEK%)</small>
+          </p>
+        </li>
+        <li>
+          <p>Odds:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nfl&type=odds">Example</a>
+            <small>(scrap?sport=%SPORT%&type=%TYPE%)</small>
+          </p>
+        </li>
+        <li>
+          <p>Futures odds:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nfl&type=futuresOdds">Example</a>
+            <small>(scrap?sport=%SPORT%&type=%TYPE%)</small>
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li id="MLB">
+      <strong>MLB</strong>
+      <ul>
+        <li>
+          <p>Scores:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=mlb&type=scoreboard&date=20160322">Example by Date</a>
+            <small>(scrap?sport=%SPORT%&type=scoreboard&date=%DATE%)</small>
+          </p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=mlb&type=scoreboard&begin=20160301&end=20160320">Example by Date Range </a>
+            <small>(scrap?sport=%SPORT%&type=scoreboard&begin=%BEGIN%&end=%END%)</small>
+          </p>
+        </li>
+        <li>
+          <p>Odds:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=mlb&type=odds">Example</a>
+            <small>(scrap?sport=%SPORT%&type=%TYPE%)</small>
+          </p>
+        </li>
+        <li>
+          <p>Futures odds:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=mlb&type=futuresOdds">Example</a>
+            <small>(scrap?sport=%SPORT%&type=%TYPE%)</small>
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li id="NHL">
+      <strong>NHL</strong>
+      <ul>
+        <li>
+          <p>Scores:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nhl&type=scoreboard&date=20160322">Example by Date</a>
+            <small>(scrap?sport=%SPORT%&type=scoreboard&date=%DATE%)</small>
+          </p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nhl&type=scoreboard&begin=20160301&end=20160320">Example by Date Range </a>
+            <small>(scrap?sport=%SPORT%&type=scoreboard&begin=%BEGIN%&end=%END%)</small>
+          </p>
+        </li>
+        <li>
+          <p>Odds:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nhl&type=odds">Example</a>
+            <small>(scrap?sport=%SPORT%&type=%TYPE%)</small>
+          </p>
+        </li>
+        <li>
+          <p>Futures odds:</p>
+          <p>
+            <a target="_blank" href="/v2/scrap?sport=nhl&type=futuresOdds">Example</a>
+            <small>(scrap?sport=%SPORT%&type=%TYPE%)</small>
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Details:</strong>
+      <p> - where %SPORT% is kind of sport <small>(Example: mlb)</small></p>
+      <p> - where %TYPE% is type of scraping <small>(Example: scoreboard)</small></p>
+      <p> - where %BEGIN% is date range begin string with format YYYYMMDD <small>(Example: 20160301)</small></p>
+      <p> - where %END% is date range begin string with format YYYYMMDD <small>(Example: 20160320)</small></p>
+      <p> - where %SEASON% is season type <small>(Example: from 1 to 3)</small></p>
+      <p> - where %WEEK% is weak of season <small>(Example: from 1 to 5 or from 1 to 17)</small></p>
+      <p> - where %YEAR% is date with format YYYY(Example: 2014)</p>
+      <p> - where %DATE% is date with format YYYYMMDD(Example: 20160301)</p>
+    </li>
+  </ul>
+</div>
+
+<% include footer %>
